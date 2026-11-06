@@ -44,14 +44,14 @@ A Receita Federal orienta que **Units** não se enquadram na isenção dos R$ 20
 **FIP-IE** e **FI-Infra** também são isentos de IR sobre os rendimentos e possuem alíquota de 0% sobre o ganho de capital, para os residentes que operam no mercado de renda variável.
 
 No caso de **ETF**s de renda variável, incide alíquota de 15% sobre o 
-lucro obtido na venda de um ativo. Prejuízos podem ser compensados no mesmo mês ou nos meses seguintes, inclusive em operações com ações ou ETFs de ações e cripto. Já no caso de ETFs de fundos imobiliários, incide alíquota de 20% 
-sobre o lucro obtido na venda de um ativo. Prejuízos podem ser compensados no mesmo mês ou nos meses seguintes, com lucros de ETFs da mesma classe (FII) ou
+lucro obtido na venda de um ativo. Prejuízos podem ser compensados no mesmo mês ou nos meses seguintes, inclusive em operações com ações ou **ETF**s de ações e cripto. Já no caso de **ETF**s de fundos imobiliários, incide alíquota de 20% 
+sobre o lucro obtido na venda de um ativo. Prejuízos podem ser compensados no mesmo mês ou nos meses seguintes, com lucros de **ETF**s da mesma classe (**FII**) ou
 cotas dos próprios fundos imobiliários. Não contam com nenhuma faixa de isenção, como no caso das ações. O DARF deve ser recolhido pelo investidor até o último dia útil do mês seguinte ao da apuração de resultados.
 
 Então, é importante saber identificar corretamente a classe de ativo, cujo *ticker* termina em **11**, por causa dos mecanismos de compensação de prejuízo e dos limites de isenção para vendas mensais abaixo de R$ 20 mil, que se aplicam em alguns casos e em outros não.
 
 Além disso, algumas classes obedecem a regras específicas:
-No caso de **BDR**s de renda variável, incide alíquota de 15% sobre o lucro obtido na venda de um ativo. Prejuízos podem ser compensados no mesmo mês ou nos meses seguintes, inclusive em operações com ações ou ETFs de ações e cripto. O DARF deve ser recolhido pelo investidor até o último dia útil do mês seguinte ao da apuração de resultados. Não contam com nenhuma faixa de isenção, como no caso das ações.
+No caso de **BDR**s de renda variável, incide alíquota de 15% sobre o lucro obtido na venda de um ativo. Prejuízos podem ser compensados no mesmo mês ou nos meses seguintes, inclusive em operações com ações ou **ETF**s de ações e cripto. O **DARF** deve ser recolhido pelo investidor até o último dia útil do mês seguinte ao da apuração de resultados. Não contam com nenhuma faixa de isenção, como no caso das ações.
 
 No caso dos *tickers* terminados em **1**, incide alíquota de 15% sobre o valor líquido da venda dos direitos de subscrição. Não está incluída no limite de isenção de venda até R$ 20 mil, como no caso das ações. O DARF deve ser recolhido pelo investidor até o último dia útil do mês seguinte ao da apuração de resultados.
 
