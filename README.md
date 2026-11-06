@@ -1,6 +1,6 @@
 ## Classificação de ativos de renda variável
 
-À medida em que incorporamos diferentes ativos à carteira de investimentos, novos desafios se impõem à tarefa de classificação e enquadramento tributário.
+Já compartilhei aqui, em outro momento, o esboço de uma rotina desenvolvida para controle automatizado das transações de ativos de renda variável, buscando facilitar o acompanhamento mensal. À medida em que incorporamos diferentes ativos à carteira de investimentos, novos desafios se impõem à tarefa de classificação e enquadramento tributário.
 
 Embora o Relatório Consolidado fornecido pela **B3** contenha informações segmentadas por classe de ativo, o extrato de negociações não permite aplicar filtro categórico. 
 
