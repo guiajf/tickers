@@ -57,6 +57,8 @@ No caso dos *tickers* terminados em **1**, incide alíquota de 15% sobre o valor
 
 Para automatizar a classificação dos ativos de renda variável, desenvolvemos uma rotina em Python, compartilhada a seguir.
 
+*Disclaimer*: Este código deve ser utilizado para fins didáticos somente. Consulte as normas tributárias vigentes.
+
 
 ### Importamos as bibliotecas
 
