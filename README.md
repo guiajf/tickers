@@ -359,7 +359,7 @@ Carregamos o JSON do [Luciano Ayres](https://github.com/lucianoayres/brazil-stoc
 ativos_nao_classificados = df[~df['Ativo'].isin(df_categorias_api['Ativo'])]['Ativo'].unique()
 
 if len(ativos_nao_classificados) > 0:
-    print(f"⚠️ {len(ativos_nao_classificados)} ativos não classificados pela API. Acionando fallback JSON...")
+    print(f"{len(ativos_nao_classificados)} ativos não classificados pela API. Acionando fallback JSON...")
     
     try:
         with open('tickers-cash-market.json', 'r', encoding='utf-8') as file:
@@ -430,24 +430,24 @@ if len(ativos_nao_classificados) > 0:
         
         # Combina os resultados da API com os do Fallback
         df_categorias_final = pd.concat([df_categorias_api, df_categorias_fallback], ignore_index=True)
-        print(f"✅ Fallback concluído. {len(df_categorias_fallback)} ativos processados via JSON.")
+        print(f"Fallback concluído. {len(df_categorias_fallback)} ativos processados via JSON.")
         
         # Mostra quais ativos ainda ficaram como "Não Classificado" para sua conferência
         nao_classificados_json = df_categorias_fallback[df_categorias_fallback['Categoria'] == 'Não Classificado']['Ativo'].tolist()
         if nao_classificados_json:
-            print(f"⚠️ ATENÇÃO: {len(nao_classificados_json)} ativos NÃO foram encontrados nem na API nem no JSON:")
+            print(f"ATENÇÃO: {len(nao_classificados_json)} ativos NÃO foram encontrados nem na API nem no JSON:")
             print(nao_classificados_json)
         
     except FileNotFoundError:
-        print("❌ Arquivo 'tickers-cash-market.json' não encontrado. Baixe-o do GitHub e coloque na mesma pasta.")
+        print("Arquivo 'tickers-cash-market.json' não encontrado. Baixe-o do GitHub e coloque na mesma pasta.")
         df_categorias_final = df_categorias_api.copy()
 else:
-    print("✅ Todos os ativos foram classificados com sucesso pela API. Fallback não necessário.")
+    print("Todos os ativos foram classificados com sucesso pela API. Fallback não necessário.")
     df_categorias_final = df_categorias_api.copy()
 ```
 
-    ⚠️ 23 ativos não classificados pela API. Acionando fallback JSON...
-    ✅ Fallback concluído. 23 ativos processados via JSON.
+    23 ativos não classificados pela API. Acionando fallback JSON...
+    Fallback concluído. 23 ativos processados via JSON.
 
 
 **Unificamos os data frames**
@@ -461,20 +461,20 @@ df_merge = df.merge(df_categorias_final, on='Ativo', how='left')
 # Verificação final de saúde dos dados
 nao_classificados_final = df_merge[df_merge['Categoria'] == 'Não Classificado']['Ativo'].unique()
 if len(nao_classificados_final) > 0:
-    print(f"\n⚠️ ATENÇÃO: {len(nao_classificados_final)} ativos ainda não classificados. Verifique manualmente:")
+    print(f"\nATENÇÃO: {len(nao_classificados_final)} ativos ainda não classificados. Verifique manualmente:")
     print(nao_classificados_final[:10])
 else:
-    print("\n🎉 SUCESSO: 100% dos ativos classificados e prontos para o script dirpf_2026!")
+    print("\nSUCESSO: 100% dos ativos classificados e prontos para o script dirpf_2026!")
 
 # Exibe um resumo
-print("\n📊 Resumo da Classificação:")
+print("\n Resumo da Classificação:")
 display(df_merge['Categoria'].value_counts())
 ```
 
     
-    🎉 SUCESSO: 100% dos ativos classificados e prontos para o script dirpf_2026!
+    SUCESSO: 100% dos ativos classificados e prontos para o script dirpf_2026!
     
-    📊 Resumo da Classificação:
+    Resumo da Classificação:
 
 
 
