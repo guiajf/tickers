@@ -112,9 +112,7 @@ df_2026 = limpar_arquivo_b3(df_2026)
 # Concatena todos os anos
 df = pd.concat([df_2024, df_2025, df_2026], ignore_index=True)
 
-# ==============================================================================
-# Padronização dos Tickers (Remoção de 'F' fracionário)
-# ==============================================================================
+# Padronização dos tickers
 # 1. str.replace(r'F$', '', regex=True): Remove o 'F' APENAS se estiver no final da string
 # 2. str.upper(): Garante que todos os tickers fiquem em maiúsculo para o merge com a API/JSON
 df['Ativo'] = df['Ativo'].astype(str).str.replace(r'F$', '', regex=True).str.upper()
